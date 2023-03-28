@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content%}
+
+{% if section == 'contact' %}
+    <h1>Thank you for contacting us.</h1>
+{% elif section == 'partner' %}
+    <h1>Thank you for requesting to partner with us.</h1>
+{% endif %}
+
+<p>Your message has been successfully sent!</p>
+{% endblock content%}

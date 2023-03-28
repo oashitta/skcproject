@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #020202;
+}
+
+
+h1, h2 {
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+a{
+  color: #000;
+}
+
+a:hover{
+  color: #0d8dbb;
+}
+
+.a-white {
+  color: #fff;
+}
+
+.a-white:hover{
+  color: #0d8dbb;
+}
+
+/* buttons */
+.btn{
+  background-color: #ff4552;
+  color: #fff;
+  transition: .4s all;
+}
+
+.btn:hover{
+  background-color: #ff4552;
+  color: white;
+  transform: scale(1.2);
+}
+
+/* Sections */
+.grey-section {
+  background-color: #f8f8f8;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.blue-section {
+  background-color: #71c2e0;
+}
+.yellow-section {
+  background-color:#fccd3e;
+}
+
+.pink-section {
+  background-color: #ff4552;
+}
+
+/* container */
+
+.container-fluid {
+  margin: 2% auto;
+  padding: 5% 10%;
+}
+
+/* NavBar */
+
+#logo {
+  height: 100px;
+  width: 100px;
+}
+
+#logo img{
+  height: 100%;
+  width: 100%
+}
+
+#navigation {
+  margin: 2% auto 0;
+  padding: 0 10%;
+  color: white;
+}
+
+.border-warning{
+  border-color: #fdbf00 !important;
+}
+
+.nav-text{
+  color:#ff4552;
+}
+
+.nav-text:hover {
+ color: #0d8dbb;
+}
+
+@media (min-width:576px){
+  .dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.dropdown-item:hover{
+background-color: #0d8dbb;
+color: #fff;
+}
+
+/* Hero Section */
+
+#hero {
+  text-align: left;
+}
+
+.hero-container {
+  padding: 5% 7%;
+}
+
+/* home page carousel */
+.c-item{
+  height: 300px;
+}
+
+.c-image{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* .c-text{
+  color: #fff;
+  text-shadow : 0.5px 0.5px black;
+} */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color:  #ff4552;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:  #ff4552;
+}
+
+/* home-mission */
+#mission {
+  text-align: right;
+}
+
+/* programs */
+.card-text {
+  text-align: left;
+}
+
+.programs_item{
+  height: 360px;
+}
+
+.programs_image{
+  height: 100%;
+  width: 100%;
+}
+
+.prog-header{
+  height: 250px;
+  }
+
+.prog-gradient{
+  background-image: linear-gradient(to bottom right, #fdbf00, #ff4552);
+}
+
+.gallery-gradient{
+  background-image: linear-gradient(to bottom right, #0dbb9e, #0d8dbb);
+}
+
+#gallery > div > img:hover{
+  cursor: pointer;
+  transition: .4s all;
+  transform: scale(1.2);
+}
+
+
+/* programs modal */
+
+/* volunteers */
+.partners-image{
+  height: 180px;
+  width: 180px;
+  /* border-radius: 100%; */
+  background-color: #fff;
+  /* border: 1px solid #0d8dbb; */
+}
+
+.leadership-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid #0d8dbb;
+}
+
+/* footer */
+#footer {
+  background-color: #ff4552;
+  color: #fff;
+  text-align: left;
+  margin: 0;
+}
+
+/* form */
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: block;
+}
+
+/* contact page */
+.contact_hero {
+  margin: 2% auto;
+  /* padding: 5% 10%; */
+}
+
+.photo-item{
+height: 400px;
+}
+
+.photo-image{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+
+.contact-icon{
+  color: #ff4552;
+}
+
+/* donations page */
+
+/* Get in touch page */
+
+@media (max-width:768px){
+  /* 600px or smaller */
+  #hero, #our_approach, #our_target{
+    text-align: center;
+  }
+
+  .home-mission{
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  .mission-image{
+    display: none;
+  }
+
+  .approach-heading, .target-heading {
+    padding: 20px;
+  } 
+
+}
+
+@media (max-width:460px){
+  p, h2 {
+    text-align: center
+  }
+
+  #who_we_are, #our_programs{
+    height: 100px;
+  }
+
+  .navbar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .navbar > a > img{
+    height: 80px;
+  }
+
+  .img-grid{
+    grid-column: 1;
+  }
+
+  .navbar-toggler-icon{
+    grid-column: 4;
+  }
+
+  form > div > button {
+    width: 60%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}
+
+/* form */
+form > p {
+display: block;
+}
+
+form > p > input, textarea {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+form > div > button {
+  width: 40%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+form > p > label{
+  padding: 10px;
+}

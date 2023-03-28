@@ -1,0 +1,4 @@
+*.env
+skc_venv
+*.sqlite3
+__pycache__/

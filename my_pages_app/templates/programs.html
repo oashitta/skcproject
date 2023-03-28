@@ -1,0 +1,93 @@
+{% extends 'base.html' %} {% block content%}
+
+<div class="container-fluid p-0 mt-0 yellow-section">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center" id="our_programs">
+            <h1>OUR PROGRAMS</h1>
+        </div>
+        <div class="programs_item col-md-6 col-sm-12">
+            <img src="/static/images/Street Children.jpg" alt="" class="programs_image">
+        </div>
+    </div>
+   
+</div>
+
+
+<section class="white-section">
+    <div class="px-4 py-5 my-5">
+      <div class="col-lg-8 mx-auto">
+        <p class="mb-4 fst-italic"><strong>
+            The rising number of street children has become a global pandemic. The UN estimates that there are over 150 million street children in the world. In Nigeria in particular, children end up on the streets for various reasons such as the inability of their families to cater to them, being disowned by their families due to superstitious beliefs, loss of parents, sexual and domestic abuse in the home and so much more.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+<section class="pink-section">
+    <div class="container-fluid text-white">
+        <div class="row d-flex align-items-center">
+                <div class="col-lg-5  mx-auto text-start mb-3">
+                    <h2>Mobile Learning Outreach</h2>
+                    <p>The Mobile Learning outreach is our flagship program which is aimed at nurturing and harnessing talents out of street children through non-traditional educational activities. </p>
+                    <p>We have designed a “mobile school” which will be placed in our core target areas where children will be engaged by volunteers in extracurricular activities with the aim of developing each child’s unique abilities and empowering them with the right attitude to seek a better life for themselves.</p>
+                    <p>We partner with both public and private sector organisations who provide us with access to their spaces to host our mobile learning programs.</p>
+                    <a href="{% url 'mobile_learning' %}" class="a-white">Learn More...</a>
+                </div>
+                <div class="col-lg-5 mx-auto">
+                    <img src="/static/images/learning_outreach image.jpg" style="width:100%;" alt="learning outreach photo">
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="white-section">
+    <div class="container-fluid">
+        <div class="row d-flex flex-row-reverse align-items-center">
+            <div class="col-lg-5 mx-auto text-start mb-3">
+                <h2>Mentoring and Counselling Program</h2>
+                <p>Street children are often exposed to complex and difficult circumstances from early-on in life and these experiences could have a lasting negative impact on their mental health and ability to thrive and function well in the mainstream society. As a result of this, they are at a higher risk of substance abuse as a way to deal with the hardship that they face.</p>
+                <p>Through our mentoring and counselling program, we work directly with qualified therapists and counsellors in their respective fields to provide support sessions to help the children tackle their addictions and learn better coping mechanisms, amongst other things.</p>
+            
+                <a href="{% url 'mentoring_counselling' %}">Learn More...</a>
+            </div>
+            <div class="col-lg-5 mx-auto">
+                <img src="/static/images/counselling.jpg" style="width:100%;" alt="counselling photo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pink-section">
+    <div class="container-fluid text-white">
+        <div class="row d-flex align-items-center">
+                <div class="col-lg-5  mx-auto text-start mb-3">
+                    <h2>Placement & Re-integration program</h2>
+                    <p>We believe in sustainable impact and development for street children and as such the placement and reintegration program is designed to ensure that all the street children who pass through our programs are armed with the right life and vocational skills to be able to thrive and live off the streets.</p>
+                    <p>We will work closely with public and private sector partners as well as SMEs to organize work placements for candidates who are deemed fit ready for reintegration by our volunteer counsellors and healthcare partners. Placements will be done based on interests and individual talents of each child to ensure that there is a good fit.</p>
+                    <a href="{% url 'placement_reintegration' %}" class="a-white">Learn More...</a>
+                </div>
+                <div class="col-lg-5 mx-auto">
+                    <img src="/static/images/reintegration_image.jpg" style="width:100%;" alt="placement image">
+                </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="white-section">
+    <div class="container-fluid">
+        <div class="row d-flex flex-row-reverse align-items-center">
+            <div class="col-lg-5 mx-auto text-start mb-3">
+                <h2>Community Support</h2>
+                <p>We believe the immediate environment plays a vital role in helping street children to develop a better self-esteem. The lack of We work directly with community leaders and families by providing them with basic amenities and resources to improve their quality of life. </p>
+                <p>This program will also include free medical consultations and sponsorship of drugs and medical procedures where necessary.</p>
+                <a href="{% url 'community_support' %}">Learn More...</a>
+            </div>
+            <div class="col-lg-5 mx-auto">
+                <img src="/static/images/immunization.jpg" style="width:100%;" alt="community support photo">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,121 @@
+{% extends 'base.html' %} {% block content%}
+    <!-- hero section -->
+
+    <section id="hero" class="white-section">
+      <div class="container-fluid py-3">
+        <div class="row pt-5 pb-5">
+          <div class="col-md-6 pt-3 pb-3">
+            <h2 class="hero-heading display-5 fw-bold lh-1.4 mb-3">
+              “You give but little when you give of your possessions. It is when you give of yourself that you truly give."
+            </h2>
+            <p>Kahlil Gibran</p>
+
+            <a class="btn btn-bg btn-color btn-lg" href="{% url 'impact' %}" role="button">Volunteer With Us.</a>
+          </div>
+          
+          <div class="mx-auto col-sm-8 col-md-6">
+            <img class="img-fluid rounded-4" src="/static/images/home_smiles.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mission -->
+    <section id="mission" class="yellow-section">
+      <div class="container-fluid">
+        <div class="row pt-5 pb-5">
+          <div class="mx-auto col-md-6">
+            <img class="img-fluid rounded-4 mission-image" src="/static/images/target3.jpg" alt="" />
+          </div>
+
+          <div class="col-md-6 align-self-center home-mission">
+            <h1>Our Mission</h1>
+            <p>
+              To empower street children to find their path out of poverty by nurturing their strengths and talents through informal educational activities.
+            </p>
+            <a href="{% url 'whoweare' %}">Learn more about us.</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- programs -->
+    <section id="home-programs" class="white-section pt-4 pb-4 ">
+
+      <h1 class="my-2 p-2">Our Programs</h1>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide pt-2" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner d-flex align-items-center">
+          <div class="carousel-item active c-item">
+            <div class="carousel-caption text-body ">
+              <h4><strong>Mobile Learning Outreach</strong> </h4>
+              <p>Children will be able to attend our mobile schools, where they will be engaged by volunteers in exracurricular activities to aid self development.</p>
+              <a href="{% url 'mobile_learning' %}">See more...</a>
+            </div>
+          </div>
+
+          <div class="carousel-item c-item">
+            <div class="carousel-caption text-body">
+              <h4><strong>Mentoring & Counselling</strong></h4>
+              <p>Our mentoring and counselling program seeks to provide support to the kids through qualified and licensed counsellors and therapists.</p>
+              <a href="{% url 'mentoring_counselling' %}">See more...</a>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <!-- <img src="/static/images/reintegration_image.jpg" class="d-block c-image" alt="placement_reintegration image"> -->
+            <div class="carousel-caption text-body">
+              <h4><strong>Placement and Reintegration</strong> </h4>
+              <p>This program is designed to make work opportunities available to participants based on their talents and interests. </p>
+              <a href="{% url 'placement_reintegration' %}" >See more...</a>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <div class="carousel-caption text-body">
+              <h4><strong>Community Support</strong> </h4>
+              <p>Our commnuity support programs ensures that these kids have access to basic amenities and medical care.</p>
+              <a href="{% url 'community_support' %}" class="card-link">See more...</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- donations -->
+
+    <section id="home-donations" class="yellow-section pt-5 pb-5">
+      <h1>Donations</h1>
+      <!-- <p>
+        Thanks to your generosity, we have received a total of N000,000,000 in
+        donations which have gone towards the execution of XYZ.
+      </p> -->
+      <h3>If you would like to make a donation kindly click the button below.</h3>
+      <a class="btn btn-bg btn-color btn-lg m-4" href="{% url 'donate' %}" role="button">Make a donation</a>
+     
+    </section>
+
+    <!-- partners -->
+    <section id="partners" class=" white-section pt-5" >
+        <h2>Our Partners</h2>
+        <div class="container-fluid">
+          <div class="row gap-5 d-flex justify-content-center">
+            
+              <img class="partners-image" src="/static/images/hadiya-logo-full-colour-rgb (3).png" alt="">
+          
+            <!-- <div class="sponsor-image col-md-3"></div>
+            <div class="sponsor-image col-md-3"></div>
+            <div class="sponsor-image col-md-3"></div>
+            <div class="sponsor-image col-md-3"></div>
+            <div class="sponsor-image col-md-3"></div> -->
+          </div>
+        </div>
+    </section>
+    {% endblock %}

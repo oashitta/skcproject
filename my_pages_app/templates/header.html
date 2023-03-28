@@ -1,0 +1,69 @@
+<!-- Nav Bar -->
+<section id="navigation" class="border border-warning sticky-top white-section">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand col-sm-1" href="/" style="height: 60px;">
+        <img src="/static/images/street kids (2).png" alt="logo" style="width:100%; height:60px;" class="img-grid">
+      </a>
+  
+      <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-2">
+            <a class="nav-link nav-text" href="{% url 'homepage' %}">Home</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link nav-text" href="{% url 'whoweare' %}" >Who We are</a>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link nav-text dropdown-toggle d-inline-block" href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/whoweare/#mission_vision">Our Mission</a></li>
+                <hr>
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/whoweare/#mission_vision">Our Vision</a></li>
+                <hr>
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/whoweare/#our_values">Our Values</a></li>
+                <hr>
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/whoweare/#our_target">Our Target</a></li>
+                <hr>
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/whoweare/#our_leadership">Leadership</a></li>
+                <hr>
+                <li><a class="dropdown-item" href="http://127.0.0.1:8000/whoweare/#our_advisory_board">Advisory Board</a></li>
+              </ul>
+            </li> -->
+          </li>
+        
+          <li class="px-1">
+            <a href="{% url 'programs' %}" class="nav-link nav-text d-inline-block">Programs</a>
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link nav-text dropdown-toggle d-inline-block" role="button" data-bs-toggle="dropdown" aria-expanded="false"><a> 
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'mobile_learning' %}">Mobile Learning Outreach</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="{% url 'mentoring_counselling' %}">Mentoring and Counselling</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="{% url 'placement_reintegration' %}">Placement & Re-integration</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="{% url 'community_support' %}">Community Support</a></li>
+                </ul>
+            </li>
+          </li>
+  
+          <li class="nav-item px-2">
+            <a href="{% url 'impact' %}" class="nav-link nav-text">Make an Impact</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="{% url 'contact' %}" class="nav-link nav-text ">Get in Touch</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="{% url 'donate' %}" class="btn btn-outline-light">Donate</a>
+          </li>
+  
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
