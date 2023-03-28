@@ -47,7 +47,7 @@ else:
     
     DEBUG = False
 
-    ALLOWED_HOSTS = ["159.203.30.146"]
+    ALLOWED_HOSTS = ["159.203.30.146", "streetkidscan.org", "www.streetkidscan.org"]
     
     DATABASES = {
         'default': {
