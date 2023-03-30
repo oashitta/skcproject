@@ -17,6 +17,7 @@ urlpatterns = [
     path("placementandreintegration/", views.placement_reintegration, name='placement_reintegration'),
     path("mobilelearning/", views.mobile_learning, name='mobile_learning'),
     path("gallery/", views.gallery, name='gallery'),
+    path("upcomingevents/", views.upcomingevents, name='upcoming_events'),
     
 
 ]
