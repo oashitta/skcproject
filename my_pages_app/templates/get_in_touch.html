@@ -1,70 +1,63 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %} {% block content%}
 
-{% block content%}
+<div class="photo-item">
+  <img src="/static/images/passion.jpg" alt="" class="photo-image" />
+</div>
 
-    <div class="photo-item">
-        <img src="/static/images/passion.jpg" alt="" class="photo-image">
+<div class="container-fluid contact_hero text-start my-3 py-3">
+  <div class="row p-5">
+    <div class="col-md-6">
+      <div class="py-3">
+        <h2>Reach out to us.</h2>
+        <p>You can contact us as follows:</p>
+      </div>
+
+      <div>
+        <div class="row">
+          <div class="col-lg-6 py-4">
+            <i class="fa-solid fa-phone contact-icon"></i>
+            <p><strong>Call us </strong></p>
+            <p>0809 339 8866</p>
+          </div>
+
+          <div class="col-lg-6 py-4">
+            <i class="fa-regular fa-envelope contact-icon"></i>
+            <p><strong>Email us at: </strong></p>
+            <p>streetkidscan@gmail.com</p>
+          </div>
+
+          <div class="col-lg-6 py-4">
+            <i class="fa-regular fa-address-book contact-icon"></i>
+            <p><strong>Find us at:</strong></p>
+            <p>Address</p>
+            <p>Lagos, Nigeria</p>
+          </div>
+
+          <div class="col-lg-6 py-4">
+            <i class="fa-regular fa-clock contact-icon"></i>
+            <p><strong>Working Hours</strong></p>
+            <p>Monday - Friday</p>
+            <p>10:00am to 4:00pm</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-   
-        <div class="container-fluid contact_hero text-start my-3 py-3">
-            <div class="row p-5">
-                <div class="col-md-6">
-                    <div class="py-3">
-                        <h2>  Reach out to us.</h2>
-                        <p>You can contact us as follows:</p>
-                    </div>
+    <div class="col-md-6 py-3 yellow-section contact-form">
+      <div class="container">
+        <h2>Get in Touch with Us.</h2>
+        <form action="" method="post">
+          {% csrf_token %} {{ form.as_p }}
 
-                    <div>
-                        <div class="row">
-                            <div class="col-lg-6 py-4">
-                                <i class="fa-solid fa-phone contact-icon"></i>
-                                <p><strong>Call us </strong></p>
-                                <p>0802 000 0000</p>
-                            </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-lg">Submit</button>
+          </div>
 
-                            <div class="col-lg-6 py-4">   
-                                <i class="fa-regular fa-envelope contact-icon"></i>
-                                <p><strong>Email us at: </strong></p>  
-                                <p>streetkidscan@gmail.com</p> 
-                            </div>
-
-                            <div class="col-lg-6 py-4">  
-                                <i class="fa-regular fa-address-book contact-icon"></i>
-                                <p><strong>Find us at:</strong></p>
-                                <p>Address</p>
-                                <p>Lagos, Nigeria</p>
-                            </div>
-
-                            <div class="col-lg-6 py-4">
-                                <i class="fa-regular fa-clock contact-icon"></i> 
-                                <p><strong>Working Hours</strong></p>
-                                <p>Monday - Friday</p>
-                                <p>10:00am to 4:00pm</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                    
-                <div class="col-md-6 py-3 yellow-section contact-form ">
-                    <div class="container">
-                        <h2>Get in Touch with Us. </h2>
-                        <form action="" method="post">
-                            {% csrf_token %}
-                            {{ form.as_p }}
-
-                            <div class="d-flex justify-content-center">
-                                <button  type="submit" class="btn btn-lg">Submit</button>
-                            </div>
-                           
-                            <!-- <input type="submit" value="Submit" class="btn btn-lg"> -->
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-   
-
+          <!-- <input type="submit" value="Submit" class="btn btn-lg"> -->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
