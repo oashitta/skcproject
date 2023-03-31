@@ -5,11 +5,11 @@
     <div class="col-6 col-md-2 mb-3">
       <h6><a href="#" style="color: #fff">StreetKidsCan</a></h6>
       <ul class="nav flex-column">
-        <li class="nav-item mb-2">
+        {% comment %} <li class="nav-item mb-2">
           <a href="#" class="nav-link p-0 text-reset">Address</a>
-        </li>
+        </li> {% endcomment %}
         <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-reset">Phone no</a>
+          <a href="#" class="nav-link p-0 text-reset">0809 339 8866</a>
         </li>
         <li class="nav-item mb-2">
           <a href="{% url 'contact' %}" class="nav-link p-0 text-reset"
@@ -39,13 +39,13 @@
           >
         </li>
         <!-- how do i make this jump to the particular section of the page? -->
-        <li class="nav-item mb-2">
+        {% comment %} <li class="nav-item mb-2">
           <a
             href="http://127.0.0.1:8000/whoweare/#our_advisory_board"
             class="nav-link p-0 text-reset"
             >Our Advisory Board</a
           >
-        </li>
+        </li> {% endcomment %}
         <li class="nav-item mb-2">
           <a href="{% url 'donate' %}" class="nav-link p-0 text-reset"
             >Make a donation</a
